@@ -22,7 +22,7 @@ h1 {
     margin: 20px 0;
 }
 
-.form {
+#form {
     margin: 20px auto;
     display: grid;
     width: 300px;
@@ -32,6 +32,10 @@ input {
     height: 30px;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    margin-top: 10px;
 }
 
 input::-webkit-inner-spin-button {
@@ -46,4 +50,8 @@ button {
     background-color: greenyellow;
     border-color: green;
     cursor: pointer;
+}
+
+#nome-error, #email-error, #telefone-error, #cpf-error, #endereco-error, #cep-error {
+    color: red;
 }

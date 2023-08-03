@@ -8,7 +8,7 @@ $(document).ready(function(){
     $('#cpf').mask('000.000.000-00',{
         placeholder:'999.999.999-99'
     })
-    $('#form').validate({
+    $('form').validate({
         rules: {
             nome: {
                 required: true
@@ -29,15 +29,6 @@ $(document).ready(function(){
             cep: {
                 required: true
             },
-            
         },
-        submitHandler: function(validador) {
-            let camposIncorretos = validador.numberOfInvalids();
-            if (camposIncorretos) {
-                alert(`Existem ${camposIncorretos} campos incorretos`)
-            }
-            console.log('carregou')
-        }
     })
-    console.log('carregou2')
 })
